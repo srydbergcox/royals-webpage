@@ -1,0 +1,193 @@
+/* CSS for my royals-page personal project. */
+
+/* Document wide styling. Variable declarations, setting background
+   color, and eliminating outer margin and padding. */
+:root {
+    --royals-color-dark-blue: #004687;
+    --royals-color-white: #ffffff;
+    --royals-color-gold: #C09C5B;
+    --royals-color-black: #000000;
+    --royals-color-light-blue: #7ab2dd;
+    --background-color: #eeeeee;
+    --side-panel-size: 25%;
+    --center-panel-size: 50%;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+/* Styling the header. */
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 2px solid var(--royals-color-gold);
+    background-color: var(--royals-color-dark-blue);
+    height: 20vh;
+}
+
+header > h1 {
+    width: var(--center-panel-size);
+    color: var(--royals-color-gold);
+    text-align: center;
+}
+
+.logo-container {
+    width: var(--side-panel-size);
+    text-align: center;
+    height: 100%;
+}
+
+#kauffman,
+#logo
+{
+    max-height: 100%;
+    width: auto;
+}
+
+/* Styling the layout of the content of the page. */
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    height: 100%;
+}
+
+.standings {
+    width: var(--side-panel-size);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+}
+
+.season-leaders {
+    width: var(--center-panel-size);
+}
+
+.recent-games-container {
+    width: var(--side-panel-size);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.standings > table {
+    margin: 10%;
+}
+
+.recent-game {
+    margin: 5%;
+}
+
+caption {
+    background-color: white;
+    border: 1px solid black;
+    border-bottom: 0px;
+
+}
+
+table {
+    border-collapse: collapse;
+    color: black;
+    background-color: white;
+    width: 90%;
+}
+
+.standings-team {
+    width: 40%;
+}
+
+.standings-wins {
+    width: 20%;
+}
+
+.standings-losses {
+    width: 20%;
+}
+
+.standings-gb {
+    width: 20%;
+}
+
+.standings h2,
+.season-leaders h2,
+.recent-games-container h2
+ {
+    text-align: center;
+}
+
+
+/* This section applies to the standings and recent games. */
+.royals-data {
+    background-color: var(--royals-color-light-blue);
+}
+
+.royals-data-bold {
+    background-color: var(--royals-color-light-blue);
+    font-weight: bold;
+}
+
+td, th {
+    border: 1px solid black;
+    text-align: center;
+}
+
+/* Styling the season leaders section. */
+.content-container {
+    display: flex;
+}
+
+section > h3 {
+    text-align: center;
+}
+
+section > strong {
+    text-align: center;
+}
+
+.leader-lists {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.leader-title {
+    padding-left: 13%;
+}
+/* Styling the recent games section. */
+.recent-game {
+    width: 90%;
+    font-size: large;
+}
+
+.score {
+    width: 10%;
+}
+
+.bold-text {
+    font-weight: bold;
+}
+
+
+/* Styling the footer. */
+footer {
+    border-top: 2px solid var(--royals-color-gold);
+}
